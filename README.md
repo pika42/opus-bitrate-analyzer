@@ -96,6 +96,7 @@ It registers with the name
     <file_name>_plot.svg
     <file_name>_interactive.html
 
+The location to save the files is the directory where opus_bitrate_analyzer.py is located.
  
 
 
