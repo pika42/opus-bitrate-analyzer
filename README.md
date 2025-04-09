@@ -22,6 +22,7 @@ size of the opus file: 6.528KB
     ffmpeg -i input.ext -vn -c:a libopus -b:a 192k -vbr on -compression_level 00 output.opus   
 
 Example:
+
 size of the opus file: 5.953KB
 
 ![Best_for_Last _192kbps-compress_level_0_bitrate](https://github.com/user-attachments/assets/b6594a92-ad3c-498c-b957-ce7f7f019d8e)
