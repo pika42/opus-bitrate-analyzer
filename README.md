@@ -74,6 +74,19 @@ Usage:
 Do not use space characters or unrecognized characters in the file name.
 
 
+Use with powershell (for the opus file inside the opus bitrate analyzer main folder) :
+
+    python opus_bitrate_analyzer.py '.\<file_name>.opus'
+
+The characters, the emptiness doesn't matter.
+
+
+Use with Powershell (path to the opus file in any folder):
+
+    python opus_bitrate_analyzer.py "<path_to_file>.opus"
+
+------
+
 Analysis file names:
 
 It registers with the name
