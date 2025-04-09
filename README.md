@@ -11,9 +11,7 @@ It supports both .ogg and .opus files made with the vorbis codec(ogg-vorbis).
 
 The file 'audio_bitrate_analyzer.bat' is recommended for Windows 10+ OSs. Allows you to select the audio file you want to analyze, no code needed. Allows you to choose the folder location where you want to save the output files.
 
-Analysis file names:
-
-It registers with the name
+Output Analysis file names:
 
     <file_name>_bitrate.csv
     <file_name>_bitrate.png
