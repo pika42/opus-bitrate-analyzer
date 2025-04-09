@@ -8,8 +8,21 @@ It supports both .ogg, .mka and .opus files made with the libopus codec(opus). F
 
 It supports both .ogg and .opus files made with the vorbis codec(ogg-vorbis).
 
+The file 'audio_bitrate_analyzer.bat' is recommended for Windows 10+ OSs. Allows you to select the audio file you want to analyze, no code needed. Allows you to choose the folder location where you want to save the output files.
+
+Analysis file names:
+
+It registers with the name
+
+    <file_name>_bitrate.csv
+    <file_name>_bitrate.png
+    <file_name>_plot.svg
+    <file_name>_interactive.html
+
 ----
-test:
+----
+
+Test:
 
 192kbps, vbr on, libopus codec, compression level 10 ( Applies compression according to the selected bitrate setting, determines the print strength. A value of 10 is HQ. There is no compression. Quality is at the highest value. A value of 0 is LQ. Compression is the highest value. Quality is the lowest (LQ). ) . 
 Code to convert file to opus:
@@ -40,7 +53,9 @@ size of the opus file: 5.953KB
 With this software we can understand whether an opus file is compressed in high quality or low quality.
 --------
 If you examine the two graphs, the music file that is highly compressed with 0 has a bitrate very close to 192kbps. This indicates a high level of compression, low quality and low size. Also, since the bitrate axis of the graph is up to 320kbps, the perception may be perceived as a higher compression level. If the bitrate axis were plotted with a maximum level of 510kbps, it would look and be perceived as a curve above 192kbps. the perception is that it is of higher quality than it actually is.
+
 Looking at the other graph, there is a very wide range of bitrate levels. Data was recorded up to 400kbps. This shows that the compression level is low and the quality is high. The reason why the file size is larger is because of the quality. 
+
 (In the second graph, the maximum point of the bitrate axis level is 510kbps. To compare the two graphs in terms of perception, imagine that both graphs are 510kbps and think about the actual graph. This way you will understand and perceive that the first graph is much more compressed).
 
 The video bitrate analyzer was created using a python script:
@@ -78,9 +93,11 @@ ffmpeg for Windows 11:
 ------
 ------
 
-Run the run_audio_bitrate_analyzer.bat file for Windows OSs. 
+Run the 'run_audio_bitrate_analyzer.bat' file for Windows OSs. 
 
 For Windows OSs, if you double-click run_audio_bitrate_analyzer.bat, audio_bitrate_analyzer.py runs in the cmd.exe window. Then the audio file selection window opens. You select the file in .opus .mka or .ogg format. By default .opus files are selected. For other formats, click on " All Files(*.*) " and select your audio file. Analyzes. The File Explorer window opens for you to choose the location to save the output files (.csv, .svg, .png, .html). You select the location where you want to save. It saves the files to that location.
+
+Output files:    <file_name>_bitrate.csv , <file_name>_bitrate.png , <file_name>_plot.svg , <file_name>_interactive.html
 
 What bitrate_analyzer.py and audio_bitrate_analyzer.py have in common is that they open a File Explorer window where you can easily select the audio file. I've made it easy to work with for those who don't want to write code.
 The only difference between bitrate_analyzer.py and audio_bitrate_analyzer.py is that audio_bitrate_analyzer.py opens a File Explorer window that lets you choose the folder where you want to save the analysis files. 
@@ -116,12 +133,12 @@ Using powershell with ps1 file:
     # Or with specific file
     .\audio_bitrate_analyzer.ps1 -filePath "C:\<path_to_file>\audio_file.opus"
 
-Double click on run_bitrate_analyzer-ps1.bat to run bitrate_analyzer.ps1 for easy execution.
+Double click on 'run_bitrate_analyzer-ps1.bat' to run bitrate_analyzer.ps1 for easy execution.
 
 ------
 ------
 
-Run the bitrate_analyzer.bat file for Windows OSs.
+Run the 'bitrate_analyzer.bat' file for Windows OSs.
 
 For Windows OSs, if you double-click bitrate_analyzer.bat, bitrate_analyzer.py runs in the cmd.exe window. Then the audio file selection window opens. You select the file in .opus .mka or .ogg format. By default .opus files are selected. For other formats, click on " All Files(*.*) " and select your audio file.
 
@@ -162,7 +179,7 @@ Using powershell with ps1 file:
     # Or with specific file
     .\bitrate_analyzer.ps1 -filePath "C:\<path_to_file>\audio_file.opus"
 
-Double click on run_bitrate_analyzer-ps1.bat to run bitrate_analyzer.ps1 for easy execution.
+Double click on 'run_bitrate_analyzer-ps1.bat' to run bitrate_analyzer.ps1 for easy execution.
 
 ------
 ------
