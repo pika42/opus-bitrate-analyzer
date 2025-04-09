@@ -87,6 +87,11 @@ bitrate_analyzer.py additionally needs Thinker to run.
 If you don't have Thinker installed (it is usually installed with python):
 
     winget install Python.Python.3 --override "/InstallAllUsers=1 /AddToPath=1 /Include_tkinter=1"
+
+Usage:
+Double click on the bitrate_analyzer.bat file.
+
+------
     
 Usage:
 
