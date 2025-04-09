@@ -89,7 +89,22 @@ If you don't have Thinker installed (it is usually installed with python):
     winget install Python.Python.3 --override "/InstallAllUsers=1 /AddToPath=1 /Include_tkinter=1"
 
 Usage:
+
 Double click on the bitrate_analyzer.bat file.
+
+Or
+
+    python .\bitrate_analyzer.py
+
+If you have a PATH problem:
+
+    C:\<path_to_python.exe_file>\python.exe .\bitrate_analyzer.py
+
+Example:
+
+C:\Python311\python.exe .\bitrate_analyzer.py
+
+C:\Program Files\Python313\python.exe .\bitrate_analyzer.py
 
 ------
     
