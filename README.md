@@ -69,7 +69,7 @@ ffmpeg for Windows 11:
 
 Usage:
 
-    python opus_bitrate_analyzer_txt.py <file_name>.opus
+    python opus_bitrate_analyzer.py <file_name>.opus
 
 Do not use space characters or unrecognized characters in the file name.
 
