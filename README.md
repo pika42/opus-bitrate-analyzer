@@ -75,7 +75,16 @@ ffmpeg for Windows 11:
 
     winget install Gyan.FFmpeg
 
-Thinker kurulu değilse (genelde python ile birlikte kurulur):
+------
+
+Run the .bat file for Windows OSs.
+
+For Windows OSs, if you double-click bitrate_analyzer.bat, bitrate_analyzer.py runs in the cmd.exe window. Then the audio file selection window opens. You select the file in .opus .mka or .ogg format. By default .opus files are selected. For other formats, click on " All Files(*.*) " and select your audio file.
+
+The only difference with bitrate_analyzer.py is that it opens a File Explorer window where you can easily select the audio file. I made it easy to work with for those who don't want to write code.
+
+bitrate_analyzer.py additionally needs Thinker to run.
+If you don't have Thinker installed (it is usually installed with python):
 
     winget install Python.Python.3 --override "/InstallAllUsers=1 /AddToPath=1 /Include_tkinter=1"
     
