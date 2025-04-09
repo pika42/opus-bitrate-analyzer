@@ -73,7 +73,12 @@ ffmpeg for Windows 11:
 
     choco install ffmpeg
 
+    winget install Gyan.FFmpeg
 
+Thinker kurulu değilse (genelde python ile birlikte kurulur):
+
+    winget install Python.Python.3 --override "/InstallAllUsers=1 /AddToPath=1 /Include_tkinter=1"
+    
 Usage:
 
     python opus_bitrate_analyzer.py <file_name>.opus
