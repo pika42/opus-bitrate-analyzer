@@ -95,6 +95,8 @@ Double click on the bitrate_analyzer.bat file.
 Or
 
     python .\bitrate_analyzer.py
+    # Or with specific file
+    python .\bitrate_analyzer.py "C:\path_to_file\audio_file.opus"
 
 If you have a PATH problem:
 
@@ -107,8 +109,19 @@ C:\Python311\python.exe .\bitrate_analyzer.py
 C:\Program Files\Python313\python.exe .\bitrate_analyzer.py
 
 ------
-    
-Usage:
+
+Using powershell with ps1 file:
+(to run bitrate_analyzer.py with powershell)
+
+    .\bitrate_analyzer.ps1
+    # Or with specific file
+    .\bitrate_analyzer.ps1 -filePath "C:\yol\dosya.opus"
+
+Double click on run_bitrate_analyzer-ps1.bat to run bitrate_analyzer.ps1 for easy execution.
+
+------
+
+Manual Usage:
 
     python opus_bitrate_analyzer.py <file_name>.opus
 
