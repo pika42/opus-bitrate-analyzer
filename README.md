@@ -1,4 +1,5 @@
-# opus-bitrate-analyzer
+# opus-ogg-mka-(libopus-vorbis)--bitrate-vs-time-plot-analyzer
+
 A python script that analyzes the bitrate-time of audio files created with the libopus codec in .opus format.
 
 Can analyze libopus and vorbis codecs.
