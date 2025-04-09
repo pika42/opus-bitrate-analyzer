@@ -36,6 +36,22 @@ ffmpeg for Windows 11:
 
     choco install ffmpeg
 
-Kullanım:
 
-python opus_bitrate_analyzer_txt.py <file_name>.opus
+Usage:
+
+    python opus_bitrate_analyzer_txt.py <file_name>.opus
+
+Do not use space characters or unrecognized characters in the file name.
+
+
+Analysis file names:
+
+It registers with the name
+<file_name>_bitrate.csv
+<file_name>_bitrate.png
+<file_name>_plot.svg
+<file_name>_interactive.html
+
+ 
+
+
