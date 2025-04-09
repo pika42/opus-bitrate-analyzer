@@ -9,7 +9,7 @@ A python script that analyzes the bitrate-time of audio files created with the l
 The video bitrate analyzer was created using a python script:
 https://github.com/InB4DevOps/bitrate-viewer/blob/main/_bitrate_analyzer.py
 
-Thanks to @InB4DevOps.
+Thanks to [@InB4DevOps](https://github.com/InB4DevOps) 
 
 Development is accelerated with the help of DeepSeek R1 DeepThink.
 
