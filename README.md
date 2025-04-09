@@ -76,12 +76,57 @@ ffmpeg for Windows 11:
     winget install Gyan.FFmpeg
 
 ------
+------
 
-Run the .bat file for Windows OSs.
+Run the run_audio_bitrate_analyzer.bat file for Windows OSs. 
+
+For Windows OSs, if you double-click run_audio_bitrate_analyzer.bat, audio_bitrate_analyzer.py runs in the cmd.exe window. Then the audio file selection window opens. You select the file in .opus .mka or .ogg format. By default .opus files are selected. For other formats, click on " All Files(*.*) " and select your audio file. Analyzes. The File Explorer window opens for you to choose the location to save the output files (.csv, .svg, .png, .html). You select the location where you want to save. It saves the files to that location.
+
+What bitrate_analyzer.py and audio_bitrate_analyzer.py have in common is that they open a File Explorer window where you can easily select the audio file. I've made it easy to work with for those who don't want to write code.
+The only difference between bitrate_analyzer.py and audio_bitrate_analyzer.py is that audio_bitrate_analyzer.py opens a File Explorer window that lets you choose the folder where you want to save the analysis files. 
+
+bitrate_analyzer.py saves the output files in the folder where bitrate_analyzer.py is located.
+
+audio_bitrate_analyzer.py additionally needs Thinker to run.
+If you don't have Thinker installed (it is usually installed with python):
+
+    winget install Python.Python.3 --override "/InstallAllUsers=1 /AddToPath=1 /Include_tkinter=1"
+
+Usage:
+
+Double click on the run_audio_bitrate_analyzer.bat file.
+
+Or
+
+    python .\audio_bitrate_analyzer.py
+    # Or with specific file
+    python .\audio_bitrate_analyzer.py "C:\path_to_file\audio_file.opus"
+
+If you have a PATH problem:
+
+    C:\<path_to_python.exe_file>\python.exe .\audio_bitrate_analyzer.py
+    
+
+------
+
+Using powershell with ps1 file:
+(to run audio_bitrate_analyzer.py with powershell)
+
+    .\audio_bitrate_analyzer.ps1
+    # Or with specific file
+    .\audio_bitrate_analyzer.ps1 -filePath "C:\<path_to_file>\audio_file.opus"
+
+Double click on run_bitrate_analyzer-ps1.bat to run bitrate_analyzer.ps1 for easy execution.
+
+------
+------
+
+Run the bitrate_analyzer.bat file for Windows OSs.
 
 For Windows OSs, if you double-click bitrate_analyzer.bat, bitrate_analyzer.py runs in the cmd.exe window. Then the audio file selection window opens. You select the file in .opus .mka or .ogg format. By default .opus files are selected. For other formats, click on " All Files(*.*) " and select your audio file.
 
-The only difference with bitrate_analyzer.py is that it opens a File Explorer window where you can easily select the audio file. I made it easy to work with for those who don't want to write code.
+
+The only difference between bitrate_analyzer.py and opus_bitrate_analyzer is that bitrate_analyzer.bat opens a File Explorer window where you can easily select the audio file. opus_bitrate_analyzer.py is used entirely from the terminal. I made it easy to work with for those who don't want to write code.
 
 bitrate_analyzer.py additionally needs Thinker to run.
 If you don't have Thinker installed (it is usually installed with python):
@@ -115,13 +160,14 @@ Using powershell with ps1 file:
 
     .\bitrate_analyzer.ps1
     # Or with specific file
-    .\bitrate_analyzer.ps1 -filePath "C:\yol\dosya.opus"
+    .\bitrate_analyzer.ps1 -filePath "C:\<path_to_file>\audio_file.opus"
 
 Double click on run_bitrate_analyzer-ps1.bat to run bitrate_analyzer.ps1 for easy execution.
 
 ------
+------
 
-Manual Usage:
+Manual Usage or for all OS:
 
     python opus_bitrate_analyzer.py <file_name>.opus
 
